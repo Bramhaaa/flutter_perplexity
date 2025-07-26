@@ -17,16 +17,31 @@ A modern search interface inspired by Perplexity AI, built with Flutter and Fast
 ## Screenshots:
 
 ### Empty Home Screen
-![Empty Home Screen](screenshots/empty-homescreen.png)
+<div align="center">
+  <img src="screenshots/empty-homescreen.png" width="45%" alt="Web - Empty Home Screen"/>
+  <img src="screenshots/ios-empty-homescreen.png" width="45%" alt="iOS - Empty Home Screen"/>
+</div>
+<div align="center">
+  <em>Web (Chrome) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iOS (iPhone 16 Pro)</em>
+</div>
 
 ### Home Screen with Query
-![Home Screen with Query](screenshots/homescreen-with-query.png)
+<div align="center">
+  <img src="screenshots/homescreen-with-query.png" width="45%" alt="Web - Home Screen with Query"/>
+  <img src="screenshots/ios-homescreen-with-query.png" width="45%" alt="iOS - Home Screen with Query"/>
+</div>
 
 ### Loading Answer
-![Loading Answer](screenshots/loading-answer.png)
+<div align="center">
+  <img src="screenshots/loading-answer.png" width="45%" alt="Web - Loading Answer"/>
+  <img src="screenshots/ios-loading-answer.png" width="45%" alt="iOS - Loading Answer"/>
+</div>
 
 ### Answer Screen
-![Answer Screen](screenshots/answer-screen.png)
+<div align="center">
+  <img src="screenshots/answer-screen.png" width="45%" alt="Web - Answer Screen"/>
+  <img src="screenshots/ios-answer-screen.png" width="45%" alt="iOS - Answer Screen"/>
+</div>
 
 ## Dependencies:
 
