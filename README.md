@@ -14,6 +14,20 @@ A modern search interface inspired by Perplexity AI, built with Flutter and Fast
 - Source citations and references
 - WebSocket-based streaming responses
 
+## Screenshots:
+
+### Empty Home Screen
+![Empty Home Screen](screenshots/empty-homescreen.png)
+
+### Home Screen with Query
+![Home Screen with Query](screenshots/homescreen-with-query.png)
+
+### Loading Answer
+![Loading Answer](screenshots/loading-answer.png)
+
+### Answer Screen
+![Answer Screen](screenshots/answer-screen.png)
+
 ## Dependencies:
 
 ### Frontend (Flutter):
