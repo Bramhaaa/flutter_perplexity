@@ -23,18 +23,30 @@ async def websocket_chat_endpoint(websocket: WebSocket):
         await asyncio.sleep(0.1)
         data = await websocket.receive_json()
         query = data.get("query")
+        print(f"Received query: {query}")
+        
         search_results = search_service.web_search(query)
+        print(f"Got {len(search_results) if search_results else 0} search results")
+        
         sorted_results = sort_source_service.sort_sources(query, search_results)
+        print(f"Sorted to {len(sorted_results) if sorted_results else 0} relevant results")
+        
         await asyncio.sleep(0.1)
         await websocket.send_json({"type": "search_result", "data": sorted_results})
+        
         for chunk in llm_service.generate_response(query, sorted_results):
             await asyncio.sleep(0.1)
             await websocket.send_json({"type": "content", "data": chunk})
 
-    except:
-        print("Unexpected error occurred")
+    except Exception as e:
+        print(f"Error occurred: {type(e).__name__}: {str(e)}")
+        import traceback
+        traceback.print_exc()
     finally:
-        await websocket.close()
+        try:
+            await websocket.close()
+        except:
+            pass
 
 
 # chat
